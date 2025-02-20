@@ -1,0 +1,107 @@
+:root {
+    --main-Drak-color: #0C0C16;
+    --ligher-purp: #B8BAFF;
+    --purp: #7477DB;
+    --purp-blush: #6666FF;
+
+}
+
+body {
+    background-color: var(--main-Drak-color);
+    overflow-x: hidden;
+}
+
+/* Ellipse 2 */
+.Ellipse2 {
+    position: absolute;
+    width: 419.87px;
+    height: 639.31px;
+    left: 1264.23px;
+    top: -190.94px;
+
+    background: var(--ligher-purp);
+    filter: blur(50.15px);
+    transform: rotate(318deg);
+}
+
+/* Ellipse 1 */
+.Ellipse1 {
+
+
+    position: absolute;
+    width: 657.87px;
+    height: 657.83px;
+    left: -365.65px;
+    top: 473.25px;
+    background: var(--ligher-purp);
+    filter: blur(59.15px);
+    transform: rotate(50deg);
+
+}
+
+.myname {
+
+    position: absolute;
+    width: 728px;
+    height: 248px;
+    left: 450px;
+    top: 236px;
+
+    font-family: 'Inknut Antiqua';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 248px;
+    color: var(--ligher-purp);
+
+    text-shadow: 0px 4px 4px rgba(102, 102, 255, 0.42);
+
+}
+
+.subtitle{
+
+position: absolute;
+width: 711px;
+height: 57px;
+left: 490px;
+top: 400px;
+
+font-family: 'Inknut Antiqua';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 57px;
+/* identical to box height */
+
+color: var(--purp-blush);
+
+
+}
+
+.nav{
+position: absolute;
+width: 306px;
+height: 52px;
+left: 603px;
+top: 470px;
+
+background: #0C0C16;
+box-shadow: 0px 6px 15.3px -1px #7477DB;
+border-radius: 44px;
+
+}
+
+.contact{
+    /* linkedin 1 */
+    
+ display: flex;
+ column-gap: 20px;
+ flex-direction: row;
+ padding: 0;
+position:relative;
+width: 100%;
+justify-content: center;
+top: 10px;
+
+
+}
