@@ -26,8 +26,6 @@ body {
 
 /* Ellipse 1 */
 .Ellipse1 {
-
-
     position: absolute;
     width: 657.87px;
     height: 657.83px;
@@ -36,11 +34,11 @@ body {
     background: var(--ligher-purp);
     filter: blur(59.15px);
     transform: rotate(50deg);
-
 }
 
 .myname {
-
+    
+    transition: all 0.6s ease-in-out;
     position: absolute;
     width: 728px;
     height: 248px;
@@ -57,51 +55,148 @@ body {
     text-shadow: 0px 4px 4px rgba(102, 102, 255, 0.42);
 
 }
-
-.subtitle{
-
+.mylogo{
 position: absolute;
-width: 711px;
-height: 57px;
-left: 490px;
-top: 400px;
+width: 100px;
+left: 600px;
+top: 120px;
 
-font-family: 'Inknut Antiqua';
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 57px;
-/* identical to box height */
-
-color: var(--purp-blush);
-
-
+transition: all 0.6s ease-in-out;
 }
 
-.nav{
-position: absolute;
-width: 306px;
-height: 52px;
-left: 603px;
-top: 470px;
-
-background: #0C0C16;
-box-shadow: 0px 6px 15.3px -1px #7477DB;
-border-radius: 44px;
-
+.mylogo-fixed{
+    position: fixed;
+    transform: translateX(-35%);
+    left: 16%;
+    top: 30px;
+    z-index: 5;
+   
 }
-
-.contact{
-    /* linkedin 1 */
+.mylogo-fixed img{
+    width: 80px;
     
- display: flex;
- column-gap: 20px;
- flex-direction: row;
- padding: 0;
-position:relative;
-width: 100%;
-justify-content: center;
-top: 10px;
+}
+.myname-fixed{
+    z-index: 5;
+    position: fixed;
+    top: -5%;
+    width: fit-content;
+    transform: translateX(-250%);
+    font-size: 16px;
+}
+
+.subtitle {
+
+    position: absolute;
+    width: 711px;
+    height: 57px;
+    left: 490px;
+    top: 400px;
+
+    font-family: 'Inknut Antiqua';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 57px;
+    /* identical to box height */
+
+    color: var(--purp-blush);
 
 
 }
+
+.nav {
+    position: absolute;
+    width: 306px;
+    height: 52px;
+    left: 50%;
+    top: 470px;
+    background: #0C0C16;
+    box-shadow: 0px 6px 15.3px -1px #7477DB;
+    border-radius: 44px;
+    transform: translateX(-50%);
+    transition: all 0.6s ease-in-out;
+    display: flex;
+    gap: 15px;
+
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: 20px;
+    width: 80%;
+    bottom: auto;
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 0;
+    border-radius: 44px;
+
+}
+
+.contact-fixed {
+    position: fixed;
+    transform: translateX(37%);
+
+}
+
+.contact {
+    /* linkedin 1 */
+    transition: all 0.6s ease-in-out;
+    display: flex;
+    column-gap: 20px;
+    flex-direction: row;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    top: 10px;
+
+
+}
+.links{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    left: 20%;
+}
+.linkes-item{
+    
+    display: flex;
+    flex-direction: row;
+    column-gap: 60px;
+    font-size: 24px;
+}
+.linkes-item li{
+    list-style: none;
+}
+.linkes-item li a{
+    color: var(--ligher-purp);
+    text-decoration: none;
+}
+.linkes-item li a:hover{
+    color: azure;
+}
+.linkes-item li a:hover::after{
+    content: ' ';
+    display: block;
+    border-radius: 0 8px 0 8px;
+    height: 5px;
+    width: 100%;
+    background-color: var(--ligher-purp);
+    animation: enter 1s ease 0s infinite normal none;
+
+}
+
+@keyframes enter {
+    0% {
+      transform: scaleX(0.1);
+      transform-origin: 0% 0%;
+    }
+  
+    100% {
+      transform: scaleX(1);
+      transform-origin: 0% 0%;
+    }
+  }
